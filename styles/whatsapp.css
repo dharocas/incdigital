@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+* {
+  box-sizing: border-box; }
 
 html, body {
   padding: 0;
@@ -114,7 +116,6 @@ body
     background: url(../images/ic_add_white_24px.svg) center center no-repeat; }
 
 .header__title {
-  text-align: center;
   font-weight: 400;
   font-size: 20px;
   margin: 0 0 0 20px;
@@ -183,7 +184,7 @@ body
             transform: rotate(90deg); } }
 
 .main {
-	margin-top: 73px;
+	margin-top: 56px;
   //padding-top: px;
   //-webkit-box-flex: 1;
   //-webkit-flex: 1;
@@ -193,9 +194,9 @@ body
   left: 0;
   top: 0;
   width: 100%;
-  height: 60%;
+  height: 100%;
   opacity: 1;
-  position: relative;
+  position: fixed;
   //pointer-events: none;
   pointer-events: auto;
   //-webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
@@ -204,14 +205,13 @@ body
 
 .header #headerLogo
 {
-
 	width: 32px;
 	height: 32px;
 }
 
 .cBackground
 {
-/*	//border: 1px dashed red; */
+	//border: 1px dashed red;
 	width: 100%;
 	height: 100%;
 	background: url('../images/bg1.jpg') no-repeat;
@@ -219,7 +219,7 @@ body
 }
 .cBackground #bgImg
 {
-	border: 1px dashed blue;
+	//border: 1px dashed blue;
 	width: 100%;
     height: 100%;
     //height: auto;
@@ -251,23 +251,32 @@ body
 .curses-box
 {
 	position: relative;
-	/* border: 1px dashed red;*/
+	//border: 1px dashed red;
 	width: 100%;
 	height: 100%;
 }
 .curse
 {
-	//display:inline-block;
-  /*  text-align: center; */
-  vertical-align: middle;
+	//border: 1px dashed blue;
 	width: 100%;
-	height: 150px;
+	height: 100px;
     background-color: white;
+	display: table;
 
+}
+.curse img
+{
+	margin: 0 20px 0 10px;
+	//border: 1px dashed red;
+}
+.vertical-middle
+{
+	display: table-cell;
+	vertical-align: middle;
 }
 .curse:nth-of-type(odd)
 {
-    background-color: #FAFAFA;
+    background-color: #FFFFE8;
 }
 
 .dialog > div {
@@ -452,12 +461,6 @@ body
     color: white;
     background-color: #3f51b5; }
 
-    .whatsapp-icon {
-      width: 30px;
-      height: 30px;
-      align: left;
-
-    }
 .swiper-container {
 	width: 100%;
 	height: 100%;
@@ -479,4 +482,81 @@ body
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+}
+.swiper-slide img
+{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide label img
+{
+	width: 40px;
+	height: 40px;
+}
+
+/* The container */
+.container {
+	//border: 1px dashed blue;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 80%;
+	
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.container .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
 }

@@ -250,21 +250,32 @@ body
 .curses-box
 {
 	position: relative;
-	border: 1px dashed red;
+	//border: 1px dashed red;
 	width: 100%;
 	height: 100%;
 }
 .curse
 {
-	//display:inline-block;
+	//border: 1px dashed blue;
 	width: 100%;
 	height: 100px;
     background-color: white;
+	display: table;
 
+}
+.curse img
+{
+	margin: 0 20px 0 10px;
+	//border: 1px dashed red;
+}
+.vertical-middle
+{
+	display: table-cell;
+	vertical-align: middle;
 }
 .curse:nth-of-type(odd)
 {
-    background-color: #FAFAFA;
+    background-color: #FFFFE8;
 }
 
 .dialog > div {

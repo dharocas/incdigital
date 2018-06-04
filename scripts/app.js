@@ -46,4 +46,44 @@ $( document ).ready(function() {
 	
 	readDeviceOrientation();
 	//document.documentElement.requestFullscreen();
+	
+	$("#butRefresh").click(function() {
+		//alert("Recarergando!");
+		window.location.reload(true);
+	});
+	
+	$("#butAdd").click(function() {
+		alert("Adicionando conteudo!");
+		populateSwiper();
+	});
+	
+	$("#headerLogo").click(function() {
+		//alert("Recarergando!");
+		window.location = "index.html";
+	});
+	
+	$(".curse").click(function() {
+		if($(this).attr("id")){
+			var nloc = $(this).attr("id")+".php";
+			//alert("Indo para "+nloc+"!");
+			window.location = nloc;
+		}else{
+			alert("Este módulo ainda não está disponível!");
+		}
+	});
+	
+	$(".main").css('height', '100%').css('height', '-=56px');
+	
+	$('.container input[type=radio]').change(
+		function(){
+			if (this.checked) {
+				if(typeof $(this).attr('resposta') !== typeof undefined && $(this).attr('resposta') !== false){
+					alert("Resposta correta!");
+					swiper.slideNext();
+				}else{
+					alert("Resposta errada!");
+				}
+			}
+		}
+	);
 });
