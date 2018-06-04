@@ -1,4 +1,8 @@
 <?php
+
+//A RESPOSTA CORRETA SEMPRE TERÁ UM ASTERISCO
+//POR EXEMPLO NA PERGUNTA "Como criar uma nova conversa?" A RESPOSTA É A "Resposta 2*"
+
 $questoes = array(
 				array(
 					'pergunta' => "Como criar uma nova conversa?",
