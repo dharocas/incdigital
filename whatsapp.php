@@ -6,15 +6,15 @@
 $questoes = array(
 				array(
 					'pergunta' => "Como criar uma nova conversa?",
-					'respostas' => array("Resposta 1", "Resposta 2*", "Resposta 3", "Resposta 4"),
+					'respostas' => array("Vou em configurações e seleciono o contato", "Clico no balão verde no canto inferior da tela e seleciono um contato*", "Vou nas chamadas e procuro a pessoa que quero conversar", "Vou no status e vejo quem eu quero conversar"),
 				),
 				array(
 					'pergunta' => "Como excluir uma conversa?",
-					'respostas' => array("Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4*"),
+					'respostas' => array("Seguro o dedo por algusn segundos em cima da conversa e seleciono os três pontinhos", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone da caixa com uma seta para baixo", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do Alfinete", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do lixo*"),
 				),
 				array(
-					'pergunta' => "Como faz para mandar uma foto?",
-					'respostas' => array("Resposta 1*", "Resposta 2", "Resposta 3", "Resposta 4"),
+					'pergunta' => "Como faz para mandar uma foto? Dentro da conversa eu seleciono o clips (na barra de digitação) e:",
+					'respostas' => array(" abro minha galeria ou tiro foto com minha câmera*", "aperto no botão Contato", "aperto no botão Localização", "aperto no botão Documento"),
 				)
 			);
 shuffle($questoes);
