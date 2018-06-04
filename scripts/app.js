@@ -66,9 +66,27 @@ $( document ).ready(function() {
 		if($(this).attr("id")){
 			var nloc = $(this).attr("id")+".php";
 			//alert("Indo para "+nloc+"!");
-			window.location = nloc;
+			//window.location = nloc;
+			//$(this).css("height", "+=100");
+			$(this).css("display", "block");
+			$(this).animate({height: "250px"},400,function(){
+				$(this).children(".about").show();
+			});
 		}else{
 			alert("Este módulo ainda não está disponível!");
+		}
+	});
+	
+	$(".curse .startBt").click(function() {
+		var divpartent = $(this).parent().parent().parent();
+		if($(divpartent).attr("id")){
+			var nloc = $(divpartent).attr("id")+".php";
+			//alert("Indo para "+nloc+"!");
+			window.location = nloc;
+			//$(this).css("height", "+=100");
+		}else{
+			alert("Este módulo ainda não está disponível!");
+			//alert($(divpartent).attr("class"));
 		}
 	});
 	

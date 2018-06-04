@@ -261,12 +261,24 @@ body
 	height: 100px;
     background-color: white;
 	display: table;
-
+	
 }
 .curse img
 {
 	margin: 0 20px 0 10px;
 	//border: 1px dashed red;
+}
+.curse .about{
+	display: none;
+	margin-top: 10px;
+}
+.curse .startBt{
+	padding: 2px 10px 2px 10px;
+	border: 1px solid blue;
+	margin-top: 30px;
+	display: inline-block;
+	font-size: 5vw;
+	border-radius: 25px;
 }
 .vertical-middle
 {
@@ -275,7 +287,7 @@ body
 }
 .curse:nth-of-type(odd)
 {
-    background-color: #FFFFE8;
+    background-color: #eceef8;
 }
 
 .dialog > div {
