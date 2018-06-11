@@ -6,15 +6,15 @@
 $questoes = array(
 				array(
 					'pergunta' => "Como criar uma nova conversa?",
-					'respostas' => array("Vou em configurações e seleciono o contato", "Clico no balão verde no canto inferior da tela e seleciono um contato*", "Vou nas chamadas e procuro a pessoa que quero conversar", "Vou no status e vejo quem eu quero conversar"),
+					'respostas' => array("Vou em 'Configurações' e seleciono o contato.", "Clico no balão verde no canto inferior da tela e seleciono um contato*", "Vou na aba 'Chamadas' e procuro a pessoa que quero conversar", "Vou na aba 'Status' e vejo quem eu quero conversar"),
 				),
 				array(
 					'pergunta' => "Como excluir uma conversa?",
-					'respostas' => array("Seguro o dedo por algusn segundos em cima da conversa e seleciono os três pontinhos", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone da caixa com uma seta para baixo", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do Alfinete", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do lixo*"),
+					'respostas' => array("Seguro o dedo por alguns segundos em cima da conversa e seleciono os três pontinhos", "Seguro o dedo por alguns segundos em cima da conversa e seleciono o ícone da caixa com uma seta para baixo", "Seguro o dedo por alguns segundos em cima da conversa e seleciono o ícone do Alfinete", "Seguro o dedo por alguns segundos em cima da conversa e seleciono o ícone do lixo*"),
 				),
 				array(
 					'pergunta' => "Como faz para mandar uma foto? Dentro da conversa eu seleciono o clips (na barra de digitação) e:",
-					'respostas' => array(" abro minha galeria ou tiro foto com minha câmera*", "aperto no botão Contato", "aperto no botão Localização", "aperto no botão Documento"),
+					'respostas' => array(" abro minha galeria ou tiro foto com minha câmera*", "aperto no botão 'Contato'", "aperto no botão 'Localização'", "aperto no botão 'Documento'"),
 				)
 			);
 shuffle($questoes);
@@ -55,7 +55,7 @@ shuffle($questoes);
 		<img id="headerLogo" src="images/icons/icon-64x64-white.png" />
 		<h1 class="header__title">Inclusão Digital</h1>
 		<button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-		<button id="butAdd" class="headerButton" aria-label="Add"></button>
+		<!-- <button id="butAdd" class="headerButton" aria-label="Add"></button> -->
 	</header>
 
 	<main class="main">

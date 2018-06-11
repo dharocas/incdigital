@@ -1,16 +1,16 @@
 <?php
 $questoes = array(
 				array(
-					'pergunta' => "Como criar uma nova conversa?",
-					'respostas' => array("Vou em configurações e seleciono o contato", "Clico no balão verde no canto inferior da tela e seleciono um contato*", "Vou nas chamadas e procuro a pessoa que quero conversar", "Vou no status e vejo quem eu quero conversar"),
+					'pergunta' => "Como fazer uma chamada de áudio?",
+					'respostas' => array("Vou na aba 'Chamadas' e em seguida vou no botão verde no canto inferior direito da tela para selecionar um contato e realizar a chamada de áudio, apertando no ícone do Telefone.*", "Vou na minha agenda do celular e seleciono o contato que quero fazer a ligação.", "Vou na aba status e em seguida seleciono o contato que quero conversar", "Vou nas 'Configurações' e seleciono o contato que quero me comunicar."),
 				),
 				array(
-					'pergunta' => "Como excluir uma conversa?",
-					'respostas' => array("Seguro o dedo por algusn segundos em cima da conversa e seleciono os três pontinhos", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone da caixa com uma seta para baixo", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do Alfinete", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do lixo*"),
+					'pergunta' => "Como fazer uma chamada de vídeo?",
+					'respostas' => array("Vou na aba 'Chamadas' e em seguida vou no botão verde no canto inferior direito da tela para selecionar um contato e realizar a chamada de áudio, apertando no ícone da Câmera.*", "Vou na minha agenda do celular e seleciono o contato que quero fazer a ligação.", "Vou na aba status e em seguida seleciono o contato que quero conversar", "Vou nas 'Configurações' e seleciono o contato que quero me comunicar."),
 				),
 				array(
-					'pergunta' => "Como faz para mandar uma foto? Dentro da conversa eu seleciono o clips (na barra de digitação) e:",
-					'respostas' => array(" abro minha galeria ou tiro foto com minha câmera*", "aperto no botão Contato", "aperto no botão Localização", "aperto no botão Documento"),
+					'pergunta' => "Como faz para alterar o status?",
+					'respostas' => array("Na página principal, devo ir em conversas e selecionar o botão '+' e alterar o status.", "Na aba 'Status', vou em 'Meu status' e seleciono o botão '+' e em seguida eu posso tirar uma foto, gravar um vídeo ou selecionar o conteúdo da minha Galeria.*", "Vou n aárea de configurações e seleciono o status que desejo colocar", "Vou na minha foto de perfil e altero o status."),
 				)
 			);
 shuffle($questoes);
@@ -51,7 +51,7 @@ shuffle($questoes);
 		<img id="headerLogo" src="images/icons/icon-64x64-white.png" />
 		<h1 class="header__title">Inclusão Digital</h1>
 		<button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-		<button id="butAdd" class="headerButton" aria-label="Add"></button>
+		<!-- <button id="butAdd" class="headerButton" aria-label="Add"></button> -->
 	</header>
 
 	<main class="main">

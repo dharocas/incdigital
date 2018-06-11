@@ -1,16 +1,16 @@
 <?php
 $questoes = array(
 				array(
-					'pergunta' => "Como criar uma nova conversa?",
-					'respostas' => array("Vou em configurações e seleciono o contato", "Clico no balão verde no canto inferior da tela e seleciono um contato*", "Vou nas chamadas e procuro a pessoa que quero conversar", "Vou no status e vejo quem eu quero conversar"),
+					'pergunta' => "Para enviar a minha localização, eu preciso:",
+					'respostas' => array("Ir em 'Configurações; e pressionar enviar.", "Dentro de uma conversa, eu clico no clips (que fica na área de digitação do texto) e em seguida seleciono 'Localização'.*", "Vou na aba 'Chamadas' e procuro a pessoa que quero compartilhar minha localização", "Devo apertar no botão com o símbolo de um telefone, dentro da conversa."),
 				),
 				array(
-					'pergunta' => "Como excluir uma conversa?",
-					'respostas' => array("Seguro o dedo por algusn segundos em cima da conversa e seleciono os três pontinhos", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone da caixa com uma seta para baixo", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do Alfinete", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do lixo*"),
+					'pergunta' => "Como enviar um áudio?",
+					'respostas' => array("Dentro da conversa eu seleciono os 3 pontinhos no canto superior direito e mando o áudio", "Na página inicial do app, eu seleciono a lupa, que fica no canto superior direito e mando o áudio ", "Dentro da conversa, ao lado da área de digitação da mensagem, eu pressiono o microfone verde e envio o áudio.*"),
 				),
 				array(
-					'pergunta' => "Como faz para mandar uma foto? Dentro da conversa eu seleciono o clips (na barra de digitação) e:",
-					'respostas' => array(" abro minha galeria ou tiro foto com minha câmera*", "aperto no botão Contato", "aperto no botão Localização", "aperto no botão Documento"),
+					'pergunta' => "Como conectar o whatsapp web?",
+					'respostas' => array("Na página principal, eu devo im em 'Conversas' e em seguida selecionar 'Whatsapp Web'e conectar com meu computador","Na página principal, eu devo ir nos três pontinhos (canto superior direito) e em seguida selecionar 'Whatsapp Web' e conectar com meu computador", "Vou na aba 'Status' e seleciono Whatsapp Web", "Vou em 'Configurações'e em seguida seleciono Whatsapp Web"),
 				)
 			);
 shuffle($questoes);
@@ -51,7 +51,7 @@ shuffle($questoes);
 		<img id="headerLogo" src="images/icons/icon-64x64-white.png" />
 		<h1 class="header__title">Inclusão Digital</h1>
 		<button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-		<button id="butAdd" class="headerButton" aria-label="Add"></button>
+		<!-- <button id="butAdd" class="headerButton" aria-label="Add"></button> -->
 	</header>
 
 	<main class="main">

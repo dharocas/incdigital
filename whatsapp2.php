@@ -1,16 +1,16 @@
 <?php
 $questoes = array(
 				array(
-					'pergunta' => "Como criar uma nova conversa?",
-					'respostas' => array("Vou em configurações e seleciono o contato", "Clico no balão verde no canto inferior da tela e seleciono um contato*", "Vou nas chamadas e procuro a pessoa que quero conversar", "Vou no status e vejo quem eu quero conversar"),
+					'pergunta' => "Como enviar um vídeo?",
+					'respostas' => array("Vou em configurações e seleciono o vídeo e mando para o contato/grupo.", "Dentro da conversa, eu seleciono o clips (na área de digitação da mensagem) e em seguida vou na Galeria e seleciono o video desejado.*", "Vou nas chamadas e procuro a pessoa que quero conversar e aperto no símbolo do telefone.", "Dentro da conversa, eu seleciono o clips (na área de digitação da mensagem) e em seguida clico em Documentos e seleciono o video desejado."),
 				),
 				array(
-					'pergunta' => "Como excluir uma conversa?",
-					'respostas' => array("Seguro o dedo por algusn segundos em cima da conversa e seleciono os três pontinhos", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone da caixa com uma seta para baixo", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do Alfinete", "Seguro o dedo por algusn segundos em cima da conversa e seleciono o ícone do lixo*"),
+					'pergunta' => "Como enviar um documento?",
+					'respostas' => array("Dentro da conversa eu seleciono os três pontinhos (canto superior direito) e seleciono 'Enviar documento'.", "Vou nas chamadas, seleciono o contato que desejo enviar e anexo o documento que eu quero.", "Dentro da conversa, seleciono o clips (dentro da área de digitação da mensagem) e em seguida vou na Galeria e seleciono o documento que desejo enviar.", "Dentro da conversa, seleciono o clips (dentro da área de digitação da mensagem) e em seguida clico em 'Documento' e seleciono o documento que desejo enviar.*"),
 				),
 				array(
-					'pergunta' => "Como faz para mandar uma foto? Dentro da conversa eu seleciono o clips (na barra de digitação) e:",
-					'respostas' => array(" abro minha galeria ou tiro foto com minha câmera*", "aperto no botão Contato", "aperto no botão Localização", "aperto no botão Documento"),
+					'pergunta' => "para enviar um contato, eu devo: ",
+					'respostas' => array(" Dentro da conversa/grupo, no clips (que fica dentro da área de digitação da mensagem), seleciono 'Contato' e em seguida escolho o Contato que desejo enviar.*", "Vou na minha agenda do telefone e seleciono o contato que desejo enviar.", "Na área de digitação da mensagem, seleciono o smile (que fica a esquerda) e em seguida seleciono o contato que quero enviar."),
 				)
 			);
 shuffle($questoes);
@@ -51,7 +51,7 @@ shuffle($questoes);
 		<img id="headerLogo" src="images/icons/icon-64x64-white.png" />
 		<h1 class="header__title">Inclusão Digital</h1>
 		<button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-		<button id="butAdd" class="headerButton" aria-label="Add"></button>
+		<!-- <button id="butAdd" class="headerButton" aria-label="Add"></button> -->
 	</header>
 
 	<main class="main">
